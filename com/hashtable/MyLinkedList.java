@@ -23,12 +23,6 @@ public class MyLinkedList<K> {
 
 	}
 
-	public INode pop(INode<K> deleteNode) {
-		INode tempNode = this.head;
-		this.head = head.getNext();
-		return tempNode;
-	}
-
 	public INode<K> search(K key) {
 		INode tempNode = head;
 		while (tempNode != null && tempNode.getNext() != null) {
@@ -38,6 +32,12 @@ public class MyLinkedList<K> {
 			tempNode = tempNode.getNext();
 		}
 		return null;
+	}
+	
+	public INode pop(INode<K> deleteNode) {
+		INode tempNode = this.head;
+		this.head = head.getNext();
+		return tempNode;
 	}
 
 	public void printMyNodes() {
