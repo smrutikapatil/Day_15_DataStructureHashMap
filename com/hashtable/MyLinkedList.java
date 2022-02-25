@@ -39,11 +39,11 @@ public class MyLinkedList<K> {
 		}
 		return null;
 	}
-	
-	public  void printMyNodes(){
-        System.out.println("My Nodes:" + head);
 
-    }
+	public void printMyNodes() {
+		System.out.println("My Nodes:" + head);
+
+	}
 
 	public String toString() {
 		return "MyLinkedListNodes{" + head + '}';
